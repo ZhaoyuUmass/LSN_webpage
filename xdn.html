@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="LSN project main page">
+  <meta name="author" content="">
+  <!-- lightning favicon -->
+  <link rel="icon" href="https://openclipart.org/image/2400px/svg_to_png/282181/1498585501.png">
+
+
+  <title>LSN Project</title>
+
+  <!-- Bootstrap core CSS -->
+  <!-- <link href="./Jumbotron Template for Bootstrap_files/bootstrap.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Custom styles for this template -->
+  <style type="text/css">
+    body {
+      padding-top: 3.5rem;
+    }
+
+    .doc {
+      position : absolute;
+      left: 100px;
+      top: 300px;
+      animation: mymove 6s;
+    }
+
+    /* Standard syntax */
+    @keyframes mymove {
+      0% {left: 600px;}
+      50% {left: 400px}
+      80% {left: 200px}
+      100% {left: 100px;}
+    }
+  </style>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-light fixed-top bg-info">
+  <a class="navbar-brand text-light" href="#"> LSN Project</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item active">
+        <a class="nav-link text-light" href="index.html"> Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="xdn.html"> Prototype </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="people.html"> Project Team </a>
+      </li>
+    </ul>
+    <!--
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    -->
+  </div>
+</nav>
+
+<main role="main">
+<div class="container">
+  <div class="card">
+
+    <div class="card-body">
+      <h2 class="card-title">XDN</h2>
+      <hr>
+      <p class="card-text" align="justify">
+        Geo-distributed services are becoming increasingly more commonplace today and are here to
+        stay because of two fundamental reasons: speed-of-light delays and high availability.
+        Nevertheless, system support for creating and reconfiguring geo-distributed services
+        among cloud hosting and platform providers is poor today.
+      </p>
+      <p class="card-text" align="justify">
+        Nowadays, stateful services, such as games, online documents, distributed file systems, data stores,
+        are commonly hosted on the cloud to achieve high availability despite the fact that responses normally
+        need to travel multiple hops and sometimes cause unexpectedly high response latency.
+      </p>
+      <img src="images/cloud.png" align="center" title="Cloud computing paradigm" class="card-img-top" style="width:800px;">
+      <p class="card-text" align="justify">
+        Our vision is to move services to the very end of users, e.g., user-owned access point,
+        gateway router, etc., to tackle speed-of-light delays.
+      </p>
+    </div>
+    <div class="doc"><img src="images/google-docs-logo.jpg" style="width:30px"></div>
+
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <h3 class="card-title">Face detection application with XDN</h3>
+    </div>
+    <video width="480" height="320" autoplay>
+      <source src="video/video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+
+</div>
+</main>
+
+<hr>
+
+<footer class="container" align="right">
+  <p>© University of Massachusetts Amherst</p>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster
+
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body></html>
