@@ -24,7 +24,7 @@
       position : absolute;
       left: 100px;
       top: 300px;
-      animation: mymove 6s;
+      animation: mymove 6s infinite;
     }
 
     /* Standard syntax */
@@ -34,6 +34,56 @@
       80% {left: 200px}
       100% {left: 100px;}
     }
+
+    .docker-doc{
+       position : absolute;
+       left: 200px;
+       top: 650px;
+     }
+
+    .docker-game{
+      position : absolute;
+      left: 265px;
+      top: 625px;
+    }
+
+    .docker-voice{
+      position : absolute;
+      left: 265px;
+      top: 675px;
+    }
+
+    .cloud-doc{
+      position : absolute;
+      left: 600px;
+      top: 650px;
+    }
+
+    .cloud-game{
+      position : absolute;
+      left: 665px;
+      top: 625px;
+    }
+
+    .cloud-voice{
+      position : absolute;
+      left: 665px;
+      top: 675px;
+    }
+
+    .mini-doc{
+      position : absolute;
+      left: 200px;
+      top: 650px;
+      animation: docmove 1s infinite;
+    }
+
+    @keyframes docmove {
+      from {left: 200px;}
+      to {left: 100px}
+    }
+
+
   </style>
 
 </head>
@@ -87,23 +137,57 @@
         are commonly hosted on the cloud to achieve high availability despite the fact that responses normally
         need to travel multiple hops and sometimes cause unexpectedly high response latency.
       </p>
+
       <img src="images/cloud.png" align="center" title="Cloud computing paradigm" class="card-img-top" style="width:800px;">
+
+
       <p class="card-text" align="justify">
-        Our vision is to move services to the very end of users, e.g., user-owned access point,
-        gateway router, etc., to tackle speed-of-light delays.
+        Our vision is to use technique such as edge computing to tackle speed-of-light delays.
+        Edge computing works by allowing some application's processing to be
+        performed by a small edge server positioned between the origin server and end user,
+        and crucially at a location physically closer to the end user.
+        Similar to, but yet different from, existing edge computing systems, e.g., CDNs and video streaming,
+        which have long been used to cache or stream static contents, XDN is designed to support
+        dynamic <b>stateful</b> services.
       </p>
+
+      <img src="images/xdn-prototype.png" align="center" title="XDN" class="card-img-top" style="width:800px;">
+
+      <p class="card-text" align="justify">
+        XDN control plane comprises a cluster of reconfigurators, which manage all the nodes and services.
+        We use micro/mini PCs, e.g., Intel NUC or a Raspberry PI, for XDN edge nodes.
+        All XDN applications must be containerized as a Docker image to be able to move across different
+        platforms. A containerized app must be registered on the control plane to let XDN migrate it to
+        an edge node. The app running on the edge maintains consistent state through GigaPaxos, a fine-grained RSM system.
+      </p>
+
+
     </div>
     <div class="doc"><img src="images/google-docs-logo.jpg" style="width:30px"></div>
 
+    <div class="docker-game"><img src="images/docker-game.png" style="width:80px"></div>
+    <div class="docker-voice"><img src="images/docker-voice.png" style="width:80px"></div>
+    <div class="docker-doc"><img src="images/docker-doc.png" style="width:80px"></div>
+
+    <div class="cloud-game"><img src="images/docker-game.png" style="width:80px"></div>
+    <div class="cloud-voice"><img src="images/docker-voice.png" style="width:80px"></div>
+    <div class="cloud-doc"><img src="images/docker-doc.png" style="width:80px"></div>
+
+
+    <div class="mini-doc"><img src="images/google-docs-logo.jpg" style="width:30px"></div>
+
   </div>
 
+
+
+
   <div class="card">
+
     <div class="card-body">
       <h3 class="card-title">Face detection application with XDN</h3>
     </div>
-    <video width="480" height="320" autoplay>
+    <video width="480" height="320" autoplay loop>
       <source src="video/video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
     </video>
   </div>
 
